@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <algorithm>
 void mostrarPromedioCalificaciones() {
 }
 
@@ -61,6 +61,22 @@ int main() {
             promedio = suma / notas;
         std::cout << "El promedio de las notas del alumno es: " << promedio << std::endl;
         }
-    //El cuarto punto es el unico realizado con chat gpt
+    {
+        double precio1, precio2, precio3;
+
+        std::cout << "Ingrese el precio del primer artículo: ";
+        std::cin >> precio1;
+        std::cout << "Ingrese el precio del segundo artículo: ";
+        std::cin >> precio2;
+        std::cout << "Ingrese el precio del tercer artículo: ";
+        std::cin >> precio3;
+
+       double precios[3] = {precio1, precio2, precio3};
+        std::sort(precios, precios + 3, std::greater<double>());
+
+        double total = precios[0] + precios[1];
+
+        std::cout << "El total que debe pagar el cliente es: " << total << std::endl;
+    }
         return 0;
     }
