@@ -61,5 +61,6 @@ int main() {
             promedio = suma / notas;
         std::cout << "El promedio de las notas del alumno es: " << promedio << std::endl;
         }
+    //El cuarto punto es el unico realizado con chat gpt
         return 0;
     }
